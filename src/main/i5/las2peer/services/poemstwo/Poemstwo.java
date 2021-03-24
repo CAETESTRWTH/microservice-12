@@ -118,9 +118,15 @@ public class Poemstwo extends RESTService {
     if(response_condition) {
       JSONObject result = new JSONObject();
 
+ JSONArray a = new JSONArray();
       
-
-      return Response.status(HttpURLConnection.HTTP_OK).entity(result.toJSONString()).build();
+JSONObject temp = new JSONObject();
+            temp.put("text", "Man benötigt keine allzu überangende Seele um zu verstehen, dass es hier auf Erden keine wahrhaftige und beständige Freude gibt, dass all unsere Vergnügungen nichts weiter als Blendwerk sind, dass unsere Leiden unendlich sind und dass schliesslich der Tod der uns jeden Augenblick bedroht uns unausbringlich nach wenigen Jahren in die entsetzliche Notlage bringen muss auf ewig entweder vernichtet oder unglücklich zu werden. Zwischen uns und der Hölle oder dem Himmel gibt es nur das Leben was die vergänglichte Sache de Welt ist."); 
+  a.add(temp);
+JSONObject temp1 = new JSONObject();
+            temp1.put("text", "Sein Blick ist vom Vorübergehn der Stäbe so müd geworden, dass er nichts mehr hält. Ihm ist, als ob es tausend Stäbe gäbe und hinter tausend Stäben keine Welt. Der weiche Gang geschmeidig starker Schritte, der sich im allerkleinsten Kreise dreht, ist wie ein Tanz von Kraft um eine Mitte, in der betäubt ein großer Wille steht. Nur manchmal schiebt der Vorhang der Pupille sich lautlos auf -. Dann geht ein Bild hinein, geht durch der Glieder angespannte Stille - und hört im Herzen auf zu sein.");
+  a.add(temp1);
+        return Response.ok(a.toJSONString()).build();
     }
     return null;
   }
