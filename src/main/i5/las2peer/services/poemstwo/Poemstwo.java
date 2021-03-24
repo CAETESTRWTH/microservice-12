@@ -124,7 +124,7 @@ JSONObject temp = new JSONObject();
             temp.put("text", "Hast du eine große Freude an etwas gehabt, so nimm Abschied! Nie kommt es zum zweiten Male."); 
   a.add(temp);
 JSONObject temp1 = new JSONObject();
-            temp1.put("text", "Sein Blick ist vom Vorübergehn der Stäbe so müd geworden, dass er nichts mehr hält. Ihm ist, als ob es tausend Stäbe gäbe und hinter tausend Stäben keine Welt. Der weiche Gang geschmeidig starker Schritte, der sich im allerkleinsten Kreise dreht, ist wie ein Tanz von Kraft um eine Mitte, in der betäubt ein großer Wille steht. Nur manchmal schiebt der Vorhang der Pupille sich lautlos auf -. Dann geht ein Bild hinein, geht durch der Glieder angespannte Stille - und hört im Herzen auf zu sein.");
+            temp1.put("text", "Keine Kunst ist's, alt zu werden; es ist Kunst, es zu ertragen.");
   a.add(temp1);
         return Response.ok(a.toJSONString()).build();
     }
